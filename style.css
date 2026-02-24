@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+[data-theme="light"] {
+    background-color: #ececec;
+    color: #212121;
+}
+
+[data-theme="dark"] {
+    background-color: #212121;
+    color: #ececec;
+}
+
+
+#instagram {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.haut {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.fleche {
+    margin-left: 10px;
+}
+
+.points {
+    margin-right: 10px;
+}
+
+.pseudo {
+    display: flex;
+    justify-self: center;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+#darkmode {
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: darkgrey;
+}
+
+#profil {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#nomImage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prenom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: smaller;
+}
+
+.followers {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.imageprofil {
+    width: 110px;
+    height: auto;
+    border-radius: 400px;
+    border-top: 4px solid rgb(241, 6, 217);
+    border-right: 4px solid rgb(241, 6, 217);
+    border-bottom: 4px solid rgb(245, 6, 6); 
+    border-left: 4px solid rgb(245, 6, 6); 
+    margin: 10px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    margin-left: 10px;
+}
+
+#Boutons {
+    display: flex;
+    alignment-baseline: central;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+.boutonFollow {
+    background-color: rgb(73, 134, 219);
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    height: 30px;
+}
+
+.boutonMessage {
+    background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    height: 30px;
+}
+
+.boutonAjout {
+    background-color: lightgrey;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 60px;
+}
+
+.icones2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.gallery img:hover {
+    transform: scale(1.5);
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+footer {
+    margin: 10px;
+}
+
+#icone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#skeleton {
+    padding: 5px;
+}
+
+#skeleton div {
+    background: grey;
+    border-radius: 6px;
+    animation: pulse 1.5s infinite;
+}
+
+.skeleton-header {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.skeleton-lines div {
+    height: 80px;
+    margin-bottom: 10px;
+
+}
+
+.skeleton-description div {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+}
+
+.skeleton-item {
+    aspect-ratio: 1 / 1;
+}
+
+.footer-skeleton div {
+    height: 40px;
+    padding: 5px;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    #instagram {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .followers {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+
+    .prenom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-left: 10px;
+    }
+
+    .icones2 {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
+    #Boutons {
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 10px;
+        padding-top: 10px;
+        gap: 200px;
+    }
+
+
+}
